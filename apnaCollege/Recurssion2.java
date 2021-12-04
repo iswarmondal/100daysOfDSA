@@ -1,3 +1,5 @@
+package apnaCollege;
+
 public class Recurssion2 {
 
     public static int first = -1;
@@ -17,16 +19,21 @@ public class Recurssion2 {
 
     }
 
-    public static void reverseString(String a, int n) {
+    public static void reverseString(String str, char a, int n, int first, int last) {
 
-        int len = (a.length()) - (n + 1);
-
-        if (len == -1) {
+        if (n == str.length()) {
+            System.out.println(first + " " + last);
             return;
         }
-        System.out.println(a.charAt(len));
 
-        reverseString(a, n + 1);
+        if (str.charAt(n) == a) {
+            if (first == -1) {
+                first = n;
+            } else {
+                last = n;
+            }
+        }
+        reverseString(str, a, n + 1, first, last);
     }
 
     public static void firstAndLastOccurance(String a, char b, int n) {
@@ -114,8 +121,6 @@ public class Recurssion2 {
     }
 
     public static void main(String[] args) {
-        String str = "abc";
-
-        subsequence(str, 0, "");
+        subsequence("abc", 0, "");
     }
 }

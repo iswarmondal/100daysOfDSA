@@ -1,3 +1,5 @@
+package apnaCollege;
+
 import java.util.*;
 
 public class Arrays {
