@@ -1,3 +1,4 @@
+package apnaCollege;
 // import java.util.Scanner;
 
 class Account {
