@@ -98,40 +98,7 @@ public class DSAwithKunal {
         return (arr[n] < arr[n + 1]) && (isSorted(arr, n + 1));
     }
 
-    public static int linearSearch(int[] arr, int item, int n) {
-        if (n == arr.length) {
-            return -1;
-        }
-
-        if (arr[n] == item) {
-            return n;
-        } else {
-            return linearSearch(arr, item, n + 1);
-        }
-    }
-
-    public static int binSearch(int[] arr, int target) {
-        int start = 0;
-        int end = (arr.length - 1);
-
-        while (start <= end) {
-
-            int mid = start + ((end - start) / 2);
-
-            if (arr[mid] > target) {
-                end = mid - 1;
-            } else if (arr[mid] < target) {
-                start = mid + 1;
-            } else {
-                return mid;
-            }
-        }
-        return -1;
-    }
-
     public static void main(String[] args) {
 
-        int[] arr = { 1, 2, 4, 5, 6, 7 };
-        System.out.println(binSearch(arr, 7));
     }
 }
