@@ -1,5 +1,3 @@
-package DSAwithKunal;
-
 public class BinarySearch {
     public static int binSearch(int[] arr, int target) {
         int start = 0;

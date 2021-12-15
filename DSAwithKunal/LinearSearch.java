@@ -1,5 +1,3 @@
-package DSAwithKunal;
-
 public class LinearSearch {
     public static int linearSearch(int[] arr, int item, int n) {
         if (n == arr.length) {

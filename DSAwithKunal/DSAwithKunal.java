@@ -1,5 +1,3 @@
-package DSAwithKunal;
-
 public class DSAwithKunal {
 
     public static void printFhib(int first, int second, int n) {

@@ -1,5 +1,3 @@
-package DSAwithKunal;
-
 public class pattarnProblemsInRecurssion {
     public static void triangle(int r, int c) {
         if (r == 0)
